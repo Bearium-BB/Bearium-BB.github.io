@@ -1,0 +1,109 @@
+
+
+header{
+    min-width: 100%;
+    background: rgb(211, 211, 211);
+    overflow: hidden;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    height: 56px;
+    align-items: center;
+}
+.title{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    line-height: 56px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+nav{
+    text-align: right;
+    height: 56px;
+}
+nav ul{
+    list-style: none;
+    font-size: 0px;
+}
+nav ul li{
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+nav ul li a{
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    cursor: pointer;
+}
+nav ul li +li{
+    margin-left: 25px;
+}
+nav ul:first-child{
+    margin-right: 25px;
+}
+.title{
+    margin-left: 25px;
+}
+footer{
+    min-width: 100%;
+    background: rgb(211, 211, 211);
+    overflow: hidden;
+}
+footer div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterNav{
+    text-align: right;
+    height: 70px;
+}
+.FooterNav ul{
+    list-style: none;
+    font-size: 0px;
+}
+.FooterNav ul li{
+    display: inline;
+    line-height: 70px;
+    cursor: default;
+}
+.FooterNav ul li a{
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    cursor: pointer;
+}
+.FooterNav ul li +li{
+    margin-left: 25px;
+}
+.box p{
+    font-size: 24px;
+    color: white;
+}
+.box p span{
+    margin-left: 5px;
+}
+.title input{
+    margin-left: 250px;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    font-size: 24px;
+    background : rgb(128, 128, 128); 
+    color: white;
+}
+input[type="text"]:valid{
+    background:rgb(192, 192, 192) url(../img/search-13-24.png) no-repeat 96% center;
+    background-size: 24px 24px;
+}
+
+

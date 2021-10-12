@@ -1,0 +1,45 @@
+@import "Base.css";
+@import "index.css";
+main{
+    margin-top: calc(50% - 390px);
+}
+.row{
+    margin-top: 30px;
+    display: flex;
+}
+.col{
+    height: 50px;
+    background: rgb(211, 211, 211);
+    box-shadow: 3px 3px 7px black;
+    border-radius: 4px;
+}
+.col + .col{
+    margin-left: 25px;
+}
+.three{
+    width: calc(33.3% - 8.3px);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    border-top:rgb(129, 129, 129) ;
+}
+i{
+    font-size: 24px;
+    color: white;
+}
+
+i:first-child{
+    margin: 20px;
+}
+i:last-child{
+    margin: 20px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 4px 0px 0px;
+}
