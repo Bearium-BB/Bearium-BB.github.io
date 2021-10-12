@@ -1,0 +1,45 @@
+.butt{
+    background-color: lightskyblue;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    }
+    .butt:hover{
+        background-color:rgb(91, 140, 170);
+    }
+    
+    
+    .BanderHome{
+    background-image:linear-gradient( rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/landband.jpg);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    }
+    .TextBander{
+        height: 100vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+        justify-content: center; 
+    }
+    .TextBander{
+        margin-top: 5px;
+    }
+    .TextBander a{
+        margin-top: 10px;
+        text-decoration: none;
+        background-color: lightskyblue;
+        padding: 10px;
+        border-radius: 20px;
+        color: white;
+    }
+    .TextBander a:hover{
+        background-color:rgb(91, 140, 170);
+    }
