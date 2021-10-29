@@ -1,0 +1,125 @@
+.mobite-nav{
+    overflow: hidden;
+    margin-right: 50px;
+}
+
+.mobite-nav p i{
+    margin-top: 18px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media screen and (min-width: 320px){
+    nav{display: none;}
+    .mobite-nav{display: block;}
+    .getInTouch{
+        margin-top: 950px;
+        
+    }
+    .rowtwo{
+        flex-direction: column;
+    }
+    .two{
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 580px){
+    nav{display: none;}
+    .mobite-nav{display: block;}
+    .col{
+        max-width: 600px;
+        width: 100%;
+        flex:0 0 100%;
+        height: 300px;
+        
+    }
+    .TextBander h1{
+        font-size: 44px;
+    }
+    .TextBander p{
+        font-size: 15px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .TextBander a{
+        padding: 10px 25px 10px 25px;
+    }
+    .getInTouch{
+        margin-top: 800px;
+        
+    }
+    .rowtwo{
+        flex-direction: column;
+    }
+    .two{
+        width: 100%;
+    }
+    .row{
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    nav{display: block;}
+    .mobite-nav{display: none;}
+    .col{
+        max-width: 800px;
+        width: 50%;
+        flex:0 0 50%;
+        height: 250px;
+    }
+    .two{
+        width: calc(50% - 6.25px);
+    }
+    .getInTouch{
+        margin-top: 100px;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    nav{display: block;}
+    .mobite-nav{display: none;}
+    
+    .col{
+        max-width: 1140px;
+        width: 25%;
+        flex:0 0 25%;
+        height: 300px;
+    }
+    .rowtwo{
+        flex-direction: row;
+    }
+    .row{
+        width: 100%;
+        margin-top: 100px;
+    }
+    .getInTouch{
+        margin-top: 100px;
+    }
+    .two{
+        width: calc(50% - 6.25px);
+    }
+    .TextBander h1{
+        font-size: 72px;
+    }
+    .TextBander p{
+        font-size: 22px;
+    }
+    .TextBander a{
+        padding: 15px 45px 15px 45px;
+    }
+    h2{
+        font-size: 22px;
+    }
+}
+
+   
+
+
