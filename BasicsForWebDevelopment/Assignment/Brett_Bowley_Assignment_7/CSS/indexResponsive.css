@@ -1,17 +1,29 @@
-@media screen and (min-width: 375px) and (max-width: 699){
+@media screen and (min-width: 320px) and (max-width: 699px){
     nav{display: none;}
     .mobite-nav{display: block;} 
+    
+    body .TextBander h1{
+        font-size: 48px;
+    }
     body .index-columns-text p{
-        font-size:  20px;
-        line-height: 28px;
+        font-size:  16px;
+        line-height: 20px;
+        font-weight: 400;
+    }
+    body .col{
+        padding: 10px;
     }
     body .index-columns{
-        flex: 0 0 100%;
+        flex: none;
+    }
+    body .index-columns-text h3 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 24px;
     }
     body main h2{
-
-        font-size: 50px;
-        margin-bottom: 10px;
+        font-size: 29px;
+        margin-bottom: 15px;
     }
     body .cotainer-m{
         width: 100%;
@@ -21,6 +33,7 @@
         flex-direction: column;
     }
 }
+
 @media screen and (min-width: 700px) and (max-width: 1023px){
     nav{display: none;}
     .mobite-nav{display: block;} 

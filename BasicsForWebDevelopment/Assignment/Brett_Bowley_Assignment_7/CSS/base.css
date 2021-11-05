@@ -55,6 +55,8 @@
         font-size: 0px;
         margin-left: 10px;
         text-align: center;
+        
+
     }
     nav ul li{
         display: inline;
@@ -89,6 +91,7 @@
     }
     footer{
         height: 59px;
+        background-color: white;
     }
     footer h2{
         text-align: right;
@@ -106,7 +109,11 @@
         background-color: rgba(83, 83, 83, 0.4);
         border-radius: 8px;
         box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(121, 121, 121, 0.2);
-        margin-bottom: 10px;
         margin-top: 10px;
     }
-    
+    .mobite-nav p{
+        text-align: center;
+    }
+    .mobite-nav i{
+        font-size: 24px;
+    }
