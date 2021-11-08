@@ -6,13 +6,16 @@
         display: block;
     }
 
-    body .cotainer-about-me{
+    body .container-about-me{
         flex-direction: column;
-        height: 2350px;
+        height: 2000px;
 
     }
     body .myStory{
         width: 100%;
+    }
+    body .myStory p{
+        font-size: 12px;
     }
     body .whatAreMySkills{
         width: 100%;
@@ -25,6 +28,10 @@
     }
     body .whatAreMySkills dd{
         text-align: left;
+        font-size: 12px;
+    }
+    body .whatAreMySkills dt{
+        font-size: 25px;
     }
     body .myStory h2{
         width: 100%;
@@ -41,7 +48,7 @@
         display: block;
     }
      
-    body .cotainer-about-me{
+    body .container-about-me{
         flex-direction: column;
         height: 1800px;
 

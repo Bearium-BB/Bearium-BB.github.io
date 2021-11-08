@@ -33,6 +33,9 @@
         margin: 0 auto;
         position: relative;
     }
+    a{
+        transition: ease-in 0.2;
+    }
 
     body {
         background: #f4f5f6;;
@@ -117,7 +120,15 @@
         align-items: center;
         justify-content: center;
     }
+    nav ul li a:hover{
+       color: #26A691;
 
+    }
+     nav ul li:last-child a:hover{
+        color: white;
+        background-color: #2fc4ab;
+ 
+     }
     /*footer*/
 
     footer {

@@ -1,7 +1,7 @@
 @import "base.css";
 @import "aboutMeResponsive.css";
 .container-about-me {
-    height: 900px;
+    height: 1000px;
     width: 100%;
     background-color: rgb(238, 244, 245);
     border-radius: 8px;
@@ -13,7 +13,7 @@
 .whatAreMySkills {
     width: 50%;
     height: 100%;
-    padding: 15px;
+    padding: 50px;
     margin: 0;
 }
 
@@ -38,9 +38,7 @@
 .myStory {
     width: 50%;
     height: 100%;
-    padding: 15px;
-    margin: 0;
-    
+    padding: 50px;  
 }
 .myStory h2{
     text-align: center;
