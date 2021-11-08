@@ -1,21 +1,24 @@
 @import "base.css";
 @import "bander.css";
 @import "indexResponsive.css";
-.section{
+.section {
     padding: 80px 0;
     background-color: #f7f8f9;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     height: 100%;
 }
-.col{
+
+.col {
     width: 100%;
     padding: 15px;
 }
-.col-content ,.col-content-index-columns{
+
+.col-content, .col-content-index-columns {
     position: relative;
     width: 100%;
     padding: 24px 28px 29px 28px;
@@ -27,52 +30,61 @@
     height: 75%;
     letter-spacing: 0.5px;
 }
-.index-columns{
+
+.index-columns {
     flex: 0 0 50%;
     height: 700px;
 }
-main h2{
+
+main h2 {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
 }
-.index-columns-text h3{
+
+.index-columns-text h3 {
     margin-top: 20px;
     text-align: center;
     font-size: 35px;
 }
-.index-columns-text p{
+
+.index-columns-text p {
     font-size: 24px;
     margin: 30px auto 0 auto;
     width: 90%;
     text-align: left;
     line-height: 32px;
 }
+
 /*gameEngineIcon*/
-.box1 hr{
+
+.box1 hr {
     border: solid black 1px;
     width: 78%;
     margin: 5px auto 0 auto;
 }
-.box2 hr{
+
+.box2 hr {
     border: solid black 1px;
     width: 73%;
     margin: 5px auto 0 auto;
 }
-.box2 h4{
+
+.box2 h4 {
     margin-top: 15px;
     text-align: center;
     font-size: 32px;
-
 }
-.gameEngineIcon{
+
+.gameEngineIcon {
     display: flex;
     justify-content: space-around;
     height: 33%;
     width: 100%;
-    margin-top:25px;
+    margin-top: 25px;
 }
-.gameEngineIcon .link{
+
+.gameEngineIcon .link {
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -81,13 +93,14 @@ main h2{
     justify-content: center;
     align-items: center;
 }
-.gameEngineIcon a{
-   width: 60px;
-   height: 60x;
-   text-decoration: none;
+
+.gameEngineIcon a {
+    width: 60px;
+    height: 60x;
+    text-decoration: none;
 }
 
-.gameEngineIcon a p{
+.gameEngineIcon a p {
     font-size: 50px;
     width: 60px;
     height: 60px;
@@ -98,9 +111,9 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.gameEngineIcon i{
+
+.gameEngineIcon i {
     font-size: 50px;
     width: 60px;
     height: 60px;
@@ -108,22 +121,26 @@ main h2{
     border: solid black 3px;
     border-radius: 50%;
 }
+
 /*gameEngineIcon*/
-.hrSplitterbox2{
+
+.hrSplitterbox2 {
     border: solid black 1px;
     width: 90%;
     margin: 5px auto 0 auto;
 }
 
 /*codeLanguage*/
-.codeLanguage{
+
+.codeLanguage {
     display: flex;
     justify-content: space-around;
     height: 33%;
     width: 100%;
-    margin-top:25px;
+    margin-top: 25px;
 }
-.codeLanguage .link{
+
+.codeLanguage .link {
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -132,26 +149,27 @@ main h2{
     justify-content: center;
     align-items: center;
 }
-.codeLanguage a{
-   width: 60px;
-   height: 60x;
-   text-decoration: none;
+
+.codeLanguage a {
+    width: 60px;
+    height: 60x;
+    text-decoration: none;
 }
 
-.codeLanguage a p{
+.codeLanguage a p {
     font-size: 50px;
     width: 60px;
     height: 60px;
     color: black;
-    border: solid rgb(54,1,141) 3px;
+    border: solid rgb(54, 1, 141) 3px;
     border-radius: 50%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-.codeLanguage i{
+
+.codeLanguage i {
     font-size: 50px;
     width: 60px;
     height: 60px;
@@ -161,54 +179,65 @@ main h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
-.codeLanguage .Icon1{
+
+.codeLanguage .Icon1 {
     font-size: 30px;
-    color: rgb(0,86,151);
-    border-color: rgb(0,86,151);
+    color: rgb(0, 86, 151);
+    border-color: rgb(0, 86, 151);
 }
-.codeLanguage .Icon2{
-    color: rgb(54,1,141);
+
+.codeLanguage .Icon2 {
+    color: rgb(54, 1, 141);
 }
-.codeLanguage .Icon3{
+
+.codeLanguage .Icon3 {
     font-size: 40px;
-    color: rgb(240,147,28);
-    border-color: rgb(240,147,28);
+    color: rgb(240, 147, 28);
+    border-color: rgb(240, 147, 28);
 }
-.callAct{
+
+.callAct {
     height: 100%;
     background-color: #f4f5f6;
 }
+
 /*codeLanguage*/
-.contactPage{
-    height:600px;
+
+.contactPage {
+    height: 600px;
     background-color: #f0f5f4;
 }
-.transition2{
-    background: rgb(19,33,35);
-    background: linear-gradient(180deg,#f4f5f6 0%,#f0f5f4 100%);
+
+.transition2 {
+    background: rgb(19, 33, 35);
+    background: linear-gradient(180deg, #f4f5f6 0%, #f0f5f4 100%);
     height: 150px;
 }
+
 /*Form*/
-.form{
+
+.form {
     width: 350px;
     box-shadow: 0 20px 48px 0 rgba(59, 69, 152, 0.25);
     padding: 10px;
     border-radius: 8px;
     background-color: white;
 }
-.form h2{
+
+.form h2 {
     font-size: 30px;
     font-weight: 600;
     text-align: center;
 }
-form{
+
+form {
     margin-top: 15px;
     width: 400px;
     font-size: 0px;
 }
-input{
+
+input {
     width: 100%;
     height: 50px;
     padding: 0 15px;
@@ -220,48 +249,55 @@ input{
     color: black;
     transition: all 0 ease-in-out;
 }
+
 input[type="text"]:valid, input[type="email"]:valid, textarea:valid {
     background: #fff url(../img/checkmark.png) no-repeat 96% center;
     background-size: 13px 13px;
 }
-input + input {
+
+input+input {
     margin-top: 15px;
 }
 
-input:focus{
+input:focus {
     border: 1px solid #61cafd;
 }
-input[type="reset"]{
+
+input[type="reset"] {
     width: 110px;
     height: 47px;
     text-align: center;
     background-color: white;
-    border: 1px solid #61cafd ;
-    font-size:  600;
+    border: 1px solid #61cafd;
+    font-size: 600;
     letter-spacing: 0.2;
     color: #61cafd;
 }
+
 input[type="reset"]:hover {
-    border: 1px solid  black ;
-    color:#00aaff ;
+    border: 1px solid black;
+    color: #00aaff;
     background: #367291;
 }
+
 input[type="submit"] {
     width: 110px;
     height: 47px;
     text-align: center;
-    background-color: #61cafd ;
-    border: 1px solid #61cafd ;
-    font-size:  600;
+    background-color: #61cafd;
+    border: 1px solid #61cafd;
+    font-size: 600;
     letter-spacing: 0.2;
     color: white;
 }
+
 input[type="submit"]:hover {
-    border: 1px solid  #61cafd ;
-    color:#61cafd ;
+    border: 1px solid #61cafd;
+    color: #61cafd;
     background: #367291;
 }
-.form textarea{
+
+.form textarea {
     resize: none;
     overflow: auto;
     width: 100%;
@@ -277,24 +313,27 @@ input[type="submit"]:hover {
     margin-top: 15px;
     padding: 5px;
 }
-.centerDiv{
+
+.centerDiv {
     display: flex;
     width: 100%;
     height: 100%;
     justify-content: center;
     align-items: center;
 }
-.buttons{
+
+.buttons {
     display: flex;
     width: 100%;
     height: 100%;
     flex-direction: column;
     align-items: center;
-
 }
-.buttons input{
+
+.buttons input {
     margin-top: 10px;
     width: 100%;
-    background-color: rgba(0,150,126,0.85);
+    background-color: rgba(0, 150, 126, 0.85);
 }
+
 /*Form*/

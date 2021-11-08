@@ -1,5 +1,5 @@
     @charset "utf-8";
-    *{
+    * {
         font-family: 'Roboto Condensed', sans-serif;
         margin: 0px;
         padding: 0px;
@@ -9,23 +9,17 @@
         box-sizing: border-box;
         vertical-align: baseline;
         -webkit-transition-duration: 0;
-                transition-duration: 0;
-    }
-    p,a,label,input,textarea,div,span{
-    -webkit-font-smoothing:  antialiased;
-    -webkit-font-smoothing:  grayscale;
-    text-rendering: optimizeLegibility;
-    letter-spacing: 0;
+        transition-duration: 0;
     }
 
-    .cotainer-h{
-        position: relative;
-        width: 90%;
-        max-width: 1280px;
-        margin: 0 auto;
-        position: relative;
+    p, a, label, input, textarea, div, span {
+        -webkit-font-smoothing: antialiased;
+        -webkit-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        letter-spacing: 0;
     }
-    .cotainer-c{
+
+    .cotainer-h {
         position: relative;
         width: 90%;
         max-width: 1280px;
@@ -33,13 +27,22 @@
         position: relative;
     }
 
-    body{
-    background:rgb(223, 223, 223);
+    .cotainer-m {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
     }
-    header{
+
+    body {
+        background: #f4f5f6;;
+    }
+
+    header {
         height: 56px;
     }
-    nav{
+
+    nav {
         text-align: right;
         height: 100%;
         width: 100%;
@@ -50,20 +53,21 @@
         margin-bottom: 10px;
         margin-top: 10px;
     }
-    nav ul{
+
+    nav ul {
         list-style: none;
         font-size: 0px;
         margin-left: 10px;
         text-align: center;
-        
-
     }
-    nav ul li{
+
+    nav ul li {
         display: inline;
         line-height: 56px;
         cursor: default;
     }
-    nav ul li a{
+
+    nav ul li a {
         font-size: 19px;
         color: white;
         font-weight: 600;
@@ -72,13 +76,16 @@
         cursor: pointer;
         margin-left: 15px;
     }
-    nav ul li +li{
+
+    nav ul li+li {
         margin-left: 10px;
     }
-    nav ul li a:hover{
-        color: rgb(210, 210,210);
+
+    nav ul li a:hover {
+        color: rgb(210, 210, 210);
     }
-    nav .icon{
+
+    nav .icon {
         background-image: url(../img/B\ Squared\ Zone.png);
         background-size: 50px 30px;
         background-repeat: no-repeat;
@@ -89,15 +96,47 @@
         display: inline-block;
         float: left;
     }
-    footer{
+
+    nav ul li:last-child {
+        float: right;
+        height: 56px;
+        margin-right: 10px;
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li:last-child a {
+        height: 75%;
+        width: 70px;
+        margin: 0;
+        background-color: #26A691;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*footer*/
+
+    footer {
         height: 59px;
         background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
     }
-    footer h2{
-        text-align: right;
+
+    footer h2 {
         margin-right: 50px;
     }
-    .mobite-nav{
+
+    /*footer*/
+
+    /*mobite-nav*/
+
+    .mobite-nav {
         display: none;
         height: 56px;
         line-height: 56px;
@@ -110,10 +149,35 @@
         border-radius: 8px;
         box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(121, 121, 121, 0.2);
         margin-top: 10px;
+        width: 100%;
     }
-    .mobite-nav p{
-        text-align: center;
+
+    .mobite-nav .icon {
+        background-image: url(../img/B\ Squared\ Zone.png);
+        background-size: 50px 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-left: 10px;
+        height: 56px;
+        width: 50px;
+        display: inline-block;
     }
-    .mobite-nav i{
+
+    .mobite-nav p {
+        display: inline-block;
+    }
+
+    .mobite-nav i {
         font-size: 24px;
+        margin-right: 10px;
+        color: white;
     }
+
+    .cotainer-mobite-nav {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*mobite-nav*/
