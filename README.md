@@ -5,4 +5,4 @@
 - [Assignment_5](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Assignment_5/index.html)
 - [Assignment_6](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Assignment_6/index.html)
 ### Final Assignments
-- [Assignment_6](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Final_Assignment/index.html)
+- [Final Assignment](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Final_Assignment/index.html)
