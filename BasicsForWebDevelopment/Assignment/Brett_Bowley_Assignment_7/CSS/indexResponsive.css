@@ -35,6 +35,9 @@
         flex-wrap: nowrap;
         flex-direction: column;
     }
+    body .aboutMeInIndex p{
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1023px) {

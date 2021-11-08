@@ -42,11 +42,11 @@
     .mobite-nav {
         display: block;
     }
-    body .box-cotainer{
+    body .box-container{
         height: 1500px;
         flex-direction: column;
     }
-    body .box-cotainer{
+    body .box-container{
         height: 1500px;
         flex-direction: column;
     }
@@ -68,6 +68,7 @@
         box-shadow: none;
         width: 100%;
         border-radius: 0 0 8px 8px;
+        margin-bottom:50px ;
     }
 }
 

@@ -36,7 +36,7 @@
                         <li><a href="Article.html">Article</a></li>
                         <li><a href="contactMe.html">Contact Me</a></li>
                         <li><a href="#">Log in</a></li>
-                      </ul>
+                    </ul>
                 </nav>
                 <div class="mobite-nav">
                     <div class="container-mobite-nav">
@@ -50,11 +50,19 @@
             <main>
                 <div class="box-container">
                     <div class="box1 gcssForbox">
-                        <i class="fa-brands fa-youtube"></i></i>
-                        <h2>YouTube</h2>
-                        <h3>A link to my channel</h3>
-                        <a href="https://www.youtube.com/channel/UCokEY3d5kgPd8TlbhBINo6w">YouTube Channel</a>
-                        <p>best way to see how I work</p>
+                        <div class="form">
+                            <h2>Get in touch</h2>
+                            <form method="POST" action="#" name="RegistrationForm"></form>
+                            <input type="text" name="FistName" placeholder="Fist name *" pattern="[a-zA-Z]+$" required>
+                            <input type="text" name="LastName" placeholder="Last name *" required>
+                            <input type="email" name="email" placeholder="ex@gmail.com *"
+                                pattern="^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$"
+                                required>
+                            <textarea name="textarea" cols="30" rows="10" maxlength="1000" required></textarea>
+                            <div class="buttons">
+                                <input type="submit" class="submit" value="send">
+                            </div>
+                        </div>
                     </div>
 
 
