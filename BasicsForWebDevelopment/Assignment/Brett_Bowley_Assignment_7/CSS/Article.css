@@ -1,0 +1,46 @@
+@import "base.css";
+.cotainer-Artcle {
+    height: 1800px;
+    width: 100%;
+    background-color: rgb(238, 244, 245);
+    border-radius: 8px;
+    margin: 50px 0;
+    box-shadow: 0px 0px 80px #A0A0A0;
+    padding: 50px 15%;
+}
+
+.cotainer-Artcle h1 {
+    font-size: 40px;
+}
+
+.cotainer-Artcle h1:first-child {
+    font-size: 40px;
+    text-align: center;
+}
+
+.cotainer-Artcle p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.cotainer-Artcle .img {
+    width: 300px;
+    height: 300px;
+    background: url(../img/1200px-HTML5_logo_and_wordmark.png);
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.cotainer-Artcle li {
+    font-size: 20px;
+}
+.cotainer-Artcle ul{
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.cotainer-Artcle .listBasic{
+margin: 0;
+}
+.cotainer-Artcle span {
+    font-weight: 700;
+}

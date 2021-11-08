@@ -1,0 +1,78 @@
+@media screen and (min-width: 320px) and (max-width: 699px) {
+    nav {
+        display: none;
+    }
+    .mobite-nav {
+        display: block;
+    }
+
+    body .cotainer-about-me{
+        flex-direction: column;
+        height: 2350px;
+
+    }
+    body .myStory{
+        width: 100%;
+    }
+    body .whatAreMySkills{
+        width: 100%;
+        margin-top: 25px;
+    }
+    body .whatAreMySkills h2{
+        width: 100%;
+        margin-top: 25px;
+        font-size: 35px;
+    }
+    body .whatAreMySkills dd{
+        text-align: left;
+    }
+    body .myStory h2{
+        width: 100%;
+        margin-top: 25px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1023px) {
+    nav {
+        display: none;
+    }
+    .mobite-nav {
+        display: block;
+    }
+     
+    body .cotainer-about-me{
+        flex-direction: column;
+        height: 1800px;
+
+    }
+    body .myStory{
+        width: 100%;
+    }
+    body .whatAreMySkills{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1399px) {
+    nav {
+        display: block;
+    }
+    .mobite-nav {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-width: 1400px)and (max-width: 1919px) {
+    nav {
+        display: block;
+    }
+    .mobite-nav {
+        display: none;
+    }
+}
+@media screen and (min-width: 1920px) {
+    
+}
