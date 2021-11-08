@@ -1,6 +1,6 @@
 @import "base.css";
 @import "aboutMeResponsive.css";
-.cotainer-about-me {
+.container-about-me {
     height: 900px;
     width: 100%;
     background-color: rgb(238, 244, 245);
@@ -14,6 +14,7 @@
     width: 50%;
     height: 100%;
     padding: 15px;
+    margin: 0;
 }
 
 .whatAreMySkills h2 {
@@ -38,6 +39,7 @@
     width: 50%;
     height: 100%;
     padding: 15px;
+    margin: 0;
     
 }
 .myStory h2{

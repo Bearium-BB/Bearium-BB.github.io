@@ -1,5 +1,5 @@
 @import "base.css";
-.cotainer-Artcle {
+.container-Artcle {
     height: 1800px;
     width: 100%;
     background-color: rgb(238, 244, 245);
@@ -9,21 +9,21 @@
     padding: 50px 15%;
 }
 
-.cotainer-Artcle h1 {
+.container-Artcle h1 {
     font-size: 40px;
 }
 
-.cotainer-Artcle h1:first-child {
+.container-Artcle h1:first-child {
     font-size: 40px;
     text-align: center;
 }
 
-.cotainer-Artcle p {
+.container-Artcle p {
     font-size: 20px;
     margin-bottom: 50px;
 }
 
-.cotainer-Artcle .img {
+.container-Artcle .img {
     width: 300px;
     height: 300px;
     background: url(../img/1200px-HTML5_logo_and_wordmark.png);
@@ -31,16 +31,16 @@
     margin: 0 auto;
 }
 
-.cotainer-Artcle li {
+.container-Artcle li {
     font-size: 20px;
 }
-.cotainer-Artcle ul{
+.container-Artcle ul{
     margin-left: 50px;
     margin-bottom: 50px;
 }
-.cotainer-Artcle .listBasic{
+.container-Artcle .listBasic{
 margin: 0;
 }
-.cotainer-Artcle span {
+.container-Artcle span {
     font-weight: 700;
 }

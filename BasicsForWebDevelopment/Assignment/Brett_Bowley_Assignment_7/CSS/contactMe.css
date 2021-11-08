@@ -9,7 +9,7 @@
     box-shadow: 0px 0px 80px #A0A0A0;
 }
 
-.box-cotainer {
+.box-container {
     height: 100vh;
     margin-top: 56px;
     width: 100%;
@@ -19,11 +19,11 @@
 }
 
 /*box1*/
-.box-cotainer .box1 {
+.box-container .box1 {
     background-color: rgb(255,0,0);
 }
 
-.box-cotainer .box1 i {
+.box-container .box1 i {
     font-size: 70px;
     color: white;
     width: 100%;
@@ -31,31 +31,31 @@
     margin-top: 25px;
 }
 
-.box-cotainer .box1 h2 {
+.box-container .box1 h2 {
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
-.box-cotainer .box1 h3 {
+.box-container .box1 h3 {
     margin-top: 100px;
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
-.box-cotainer .box1 p {
+.box-container .box1 p {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.box-cotainer .box1 a {
+.box-container .box1 a {
     color: white;
     font-size: 20px;
     display: flex;
     justify-content: center;
 }
-.box-cotainer .box1 p:last-child {
+.box-container .box1 p:last-child {
     position: absolute;
     left: 0;
     right: 0;
@@ -66,11 +66,11 @@
 
 /*box2*/
 
-.box-cotainer .box2 {
+.box-container .box2 {
     background-color: rgb(85, 96, 233);
 }
 
-.box-cotainer .box2 i {
+.box-container .box2 i {
     font-size: 70px;
     color: white;
     width: 100%;
@@ -78,26 +78,26 @@
     margin-top: 25px;
 }
 
-.box-cotainer .box2 h2 {
+.box-container .box2 h2 {
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
-.box-cotainer .box2 h3 {
+.box-container .box2 h3 {
     margin-top: 100px;
     color: white;
     text-align: center;
     font-size: 30px;
 }
 
-.box-cotainer .box2 p {
+.box-container .box2 p {
     color: white;
     font-size: 20px;
     text-align: center;
 }
 
-.box-cotainer .box2 p:last-child {
+.box-container .box2 p:last-child {
     position: absolute;
     left: 0;
     right: 0;
@@ -108,11 +108,11 @@
 
 /*box3*/
 
-.box-cotainer .box3 {
+.box-container .box3 {
     background-color: white;
 }
 
-.box-cotainer .box3 i {
+.box-container .box3 i {
     font-size: 70px;
     color: black;
     width: 100%;
@@ -120,31 +120,31 @@
     margin-top: 25px;
 }
 
-.box-cotainer .box3 h2 {
+.box-container .box3 h2 {
     color: black;
     text-align: center;
     font-size: 30px;
 }
 
-.box-cotainer .box3 h3 {
+.box-container .box3 h3 {
     margin-top: 100px;
     color: black;
     text-align: center;
     font-size: 30px;
 }
 
-.box-cotainer .box3 p {
+.box-container .box3 p {
     color: black;
     font-size: 20px;
     text-align: center;
 }
-.box-cotainer .box3 a {
+.box-container .box3 a {
     color: black;
     font-size: 20px;
     display: flex;
     justify-content: center;
 }
-.box-cotainer .box3 p:last-child {
+.box-container .box3 p:last-child {
     position: absolute;
     left: 0;
     right: 0;
