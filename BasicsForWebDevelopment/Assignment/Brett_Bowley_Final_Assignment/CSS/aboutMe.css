@@ -1,0 +1,53 @@
+@import "base.css";
+@import "aboutMeResponsive.css";
+.container-about-me {
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(238, 244, 245);
+    border-radius: 8px;
+    margin: 50px 0;
+    box-shadow: 0px 0px 80px #A0A0A0;
+    display: flex;
+}
+
+.whatAreMySkills {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+    margin: 0;
+}
+
+.whatAreMySkills h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.whatAreMySkills dl {
+    margin: 25px;
+    text-align: center;
+}
+
+.whatAreMySkills dt {
+    font-size: 40px;
+}
+.whatAreMySkills dd {
+    margin: 5px 0 20px 0;
+    font-size: 20px;
+}
+
+.myStory {
+    width: 50%;
+    height: 100%;
+    padding: 50px;  
+}
+.myStory h2{
+    text-align: center;
+    font-size: 48px;
+}
+.myStory p{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.myStory h3{
+    margin-top: 50px;
+}
