@@ -38,7 +38,25 @@
     border-radius: 20px;
     color: white;
 }
-
+.fa-arrow-down{
+    transform: translateY(-110px);
+    font-size: 30px;
+    animation: up-down;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes up-down{
+    0%{
+        transform: translateY(-110px); 
+    }
+    50%{
+        transform: translateY(-100px); 
+    }
+    100%{
+        transform: translateY(-110px); 
+    }
+}
 .transition {
     background: rgb(19, 33, 35);
     background: linear-gradient(180deg, rgba(19, 33, 35, 1) 0%, rgba(202, 207, 208, 1) 78%, white 100%);
