@@ -46,7 +46,7 @@ const inputcss = document.getElementsByClassName('inputcss')
 var mode = true
 ModeChanger.addEventListener('click', function() {
     if (mode) {
-        ModeChanger.value = "light mode";
+        ModeChanger.value = "Dark mode";
         body.style.background = "#232931"
         for (let i = 0; i < h2.length; i++) {
             h2[i].style.color = "#000000";
@@ -67,7 +67,7 @@ ModeChanger.addEventListener('click', function() {
         }
         mode = false;
     } else {
-        ModeChanger.value = "Dark mode";
+        ModeChanger.value = "light mode";
         body.style.background = "#F4F5F6"
         for (let i = 0; i < h2.length; i++) {
             h2[i].style.color = "#000000";
