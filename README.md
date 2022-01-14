@@ -9,4 +9,4 @@
 
 
 ### projects
-- [Brett_Bowley_jsb_project_1](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_jsb_project_1/a3.html)
+- [Brett_Bowley_jsb_project_1](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_jsb_project_1/A3.html)
