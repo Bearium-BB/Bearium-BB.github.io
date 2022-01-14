@@ -68,7 +68,7 @@ ModeChanger.addEventListener('click', function() {
         mode = false;
     } else {
         console.log(mode);
-        ModeChanger.value = "light mode";
+        ModeChanger.value = "Dark mode";
         body.style.background = "#F4F5F6"
         for (let i = 0; i < h2.length; i++) {
             h2[i].style.color = "#000000";
