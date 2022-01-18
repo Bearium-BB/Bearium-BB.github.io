@@ -8,5 +8,9 @@
 - [Final Assignment](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Final_Assignment/index.html)
 
 
-### projects
+### Projects
 - [Brett_Bowley_jsb_project_1](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_jsb_project_1/A3.html)
+
+
+### Games
+- [Guessing Number](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Guessing Number/index.html)
