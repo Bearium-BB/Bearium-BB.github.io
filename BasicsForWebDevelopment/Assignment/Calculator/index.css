@@ -177,3 +177,11 @@ section {
     grid-column-end: 5;
     height: 90px;
 }
+
+.allNum:hover {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(78, 84, 85, 0.5);
+}
+
+.specialCharacters:hover {
+    box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(78, 84, 85, 0.5);
+}
