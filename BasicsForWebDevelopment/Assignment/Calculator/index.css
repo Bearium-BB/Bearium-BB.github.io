@@ -1,0 +1,179 @@
+@charset "utf-8";
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    outline: 0px;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0;
+    transition-duration: 0;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: calc(100vh - 66px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    transition: all 0.2 ease-in-out;
+}
+
+body {
+    background: #232931;
+    ;
+}
+
+header {
+    height: 56px;
+}
+
+nav {
+    text-align: right;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(83, 83, 83, 0.4);
+    border-radius: 8px;
+    box-shadow: 0.7px 0.7px 0.7px 0.7px rgba(121, 121, 121, 0.2);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a {
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: .2px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+nav ul li+li {
+    margin-left: 10px;
+}
+
+nav ul li a:hover {
+    color: rgb(210, 210, 210);
+}
+
+nav .icon {
+    background-image: url(../img/B\ Squared\ Zone.png);
+    background-size: 50px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    height: 56px;
+    width: 50px;
+    display: inline-block;
+    float: left;
+}
+
+nav ul li:last-child {
+    float: right;
+    height: 56px;
+    margin-right: 10px;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li:last-child a {
+    height: 75%;
+    width: 70px;
+    margin: 0;
+    background-color: #4ECCA3;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li a:hover {
+    color: #4ECCA3;
+}
+
+nav ul li:last-child a:hover {
+    color: white;
+    background-color: #2fc4ab;
+}
+
+section {
+    position: relative;
+    margin: 0 auto;
+    width: 500px;
+    height: 800px;
+    background-color: #393E46;
+    border-radius: 8px;
+}
+
+#numberScreen {
+    width: 80%;
+    height: 190px;
+    border-radius: 8px;
+    margin: 50px 50px 0px 50px;
+    margin-top: 35px;
+    background-color: #232931;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(78, 84, 85, 0.5);
+    color: white;
+    font-size: 50px;
+    text-align: right;
+    padding: 15px;
+}
+
+#numberPad {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 35px;
+    height: 300px;
+    display: grid;
+    grid-gap: 13px;
+    grid-template-columns: calc(100px - 10px) calc(100px - 10px) calc(100px - 10px) calc(100px - 10px);
+    grid-template-rows: calc(100px - 10px) calc(100px - 10px) calc(100px - 10px) calc(100px - 10px);
+}
+
+.allNum {
+    background-color: #232931;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(78, 84, 85, 0.5);
+    color: white;
+    font-size: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.specialCharacters {
+    background-color: #2fc4ab;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5), -3px -3px 6px rgba(78, 84, 85, 0.5);
+    color: white;
+    font-size: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#CA {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    height: 90px;
+}
