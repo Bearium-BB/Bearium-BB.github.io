@@ -14,3 +14,4 @@
 
 ### Games
 - [Guessing Number](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/guessing%20number/index.html)
+- [Guessing Number](https://timelord200410.github.io/BasicsForWebDevelopment/Assignment/Calculator/index.html)
