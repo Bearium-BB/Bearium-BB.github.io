@@ -1,11 +1,12 @@
-const allEntities = document.getElementsByClassName("allEntities")
-const numberScreen = document.getElementById("numberScreen")
+const allEntities = document.getElementsByClassName("allEntities");
+const numberScreen = document.getElementById("numberScreen");
 
 var equation
 for (const i of allEntities) {
+
     i.addEventListener('click', function(event) {
 
-        if (i.value != "=" && i.value !== "CA") {
+        if (i.value != "=" && i.value != "CA") {
             equation = numberScreen.value += i.value;
         }
 
@@ -17,7 +18,8 @@ for (const i of allEntities) {
 
             equation = numberScreen.value;
 
-            numberScreen.value = eval(equation);
+            numberScreen.value = Function("return " + equation)();
         }
     })
+
 }
