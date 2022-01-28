@@ -84,7 +84,7 @@ nav ul li p {
     color: white;
     font-weight: 600;
     letter-spacing: .2px;
-    margin-left: 450px;
+    margin-left: 15vw;
 }
 
 nav ul li:first-child {
@@ -92,7 +92,7 @@ nav ul li:first-child {
 }
 
 #logIn {
-    margin-left: 700px;
+    margin-left: 25vw;
 }
 
 nav ul li a:hover {
