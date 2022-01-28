@@ -43,10 +43,12 @@ submitLogin.addEventListener('click', function() {
     if (password.value === passwordAs && email.value === emailAs) {
         LogInBool = true;
         errorMessage.style.color = "green";
-        errorMessage.innerText = 'your login'
+        errorMessage.innerText = 'your login';
+        password.value = '';
+        email.value = '';
     } else {
-        errorMessage.style.color = "red";
-        errorMessage.innerText = 'Wrong password or email'
+        errorMessage.style.color = "red";;
+        errorMessage.innerText = 'Wrong password or email';
     }
 });
 
@@ -89,7 +91,7 @@ function lookingErrors() {
     }
 
     if (option.value == undefined) {
-        error.innerHTML += '<p>Please select engine.\n</p>';
+        error.innerHTML += '<p>Please a search engine.\n</p>';
         errorBool = true;
     }
 
