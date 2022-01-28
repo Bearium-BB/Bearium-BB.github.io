@@ -1,7 +1,7 @@
 const $form = document.getElementById('form')
 const $firstName = document.getElementById('first-name')
 const $lastName = document.getElementById('last-name')
-const $age = document.getElementById('age')
+const $password = document.getElementById('age')
 const $email = document.getElementById('email')
 const $submit = document.getElementById('submit')
 const error = document.getElementById('error');
@@ -18,9 +18,10 @@ $submit.addEventListener('click', () => {
 
 function lookingErrors() {
     const emailPattern = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$/
+    const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/
     let firstName = $firstName.value.trim();
     let lastName = $lastName.value.trim();
-    let age = $age.value.trim();
+    let password = $password.value.trim();
     let email = $email.value.trim();
 
     let message = '';
@@ -29,29 +30,21 @@ function lookingErrors() {
     error.innerText = "";
 
     if (firstName === '') {
-        message += 'First name is required\n'
+        message += 'First name is required.\n'
         valid = false;
         count++;
     }
 
     if (lastName === '') {
-        message += 'Last name is required\n'
+        message += 'Last name is required.\n'
         valid = false;
         count++;
     }
 
-    if (age === '') {
-        message += 'Age is required\n';
+    if (!passwordPattern.test(password)) {
+        message += 'The password requires minimum 8 characters, at least 1 letter and 1 number.\n';
         valid = false;
         count++;
-
-    } else {
-        let ageInt = parseInt(age);
-        if (isNaN(age) || (ageInt < 16 || ageInt > 120)) {
-            message += 'Age is not valid\n';
-            valid = false;
-        }
-
     }
 
     if (email === '') {
@@ -61,7 +54,7 @@ function lookingErrors() {
 
     } else {
         if (!emailPattern.test(email)) {
-            message += 'Email is not valid\n';
+            message += 'Email is not valid.\n';
             valid = false;
         }
     }
@@ -76,7 +69,7 @@ function lookingErrors() {
         error.style.display = 'block';
     }
     if (valid) {
-        error.innerText += 'your signup was successful';
+        error.innerText += 'your signup was successful.';
         animation('workAnimation');
         error.style.display = 'block';
     }

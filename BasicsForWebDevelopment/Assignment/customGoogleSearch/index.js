@@ -89,7 +89,7 @@ function lookingErrors() {
     }
 
     if (option.value == undefined) {
-        error.innerHTML += '<p>please select engine.\n</p>';
+        error.innerHTML += '<p>Please select engine.\n</p>';
         errorBool = true;
     }
 
