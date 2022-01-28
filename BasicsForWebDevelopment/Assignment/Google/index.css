@@ -231,6 +231,12 @@ h2:hover {
     color: red;
 }
 
+#form p {
+    margin-top: 10px;
+    color: #EEEEEE;
+    font-size: 20px;
+}
+
 #inputs {
     display: flex;
     height: 100%;
@@ -261,7 +267,7 @@ h2:hover {
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 15px;
     font-size: 40px;
 }
 

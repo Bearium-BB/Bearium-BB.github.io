@@ -42,8 +42,10 @@ const emailPattern = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]
 submitLogin.addEventListener('click', function() {
     if (password.value === passwordAs && email.value === emailAs) {
         LogInBool = true;
-        logInCloseAndOpen();
+        errorMessage.style.color = "green";
+        errorMessage.innerText = 'your login'
     } else {
+        errorMessage.style.color = "red";
         errorMessage.innerText = 'Wrong password or email'
     }
 });
@@ -77,7 +79,10 @@ function animation(theAnimationName) {
 }
 
 function lookingErrors() {
+
     error.innerText = '';
+    errorBool = true;
+
     if (LogInBool == false) {
         error.innerHTML += '<p>You must login.\n</p>';
         errorBool = true;
@@ -85,6 +90,11 @@ function lookingErrors() {
 
     if (option.value == undefined) {
         error.innerHTML += '<p>please select engine.\n</p>';
+        errorBool = true;
+    }
+
+    if (searchBar.value == "" && option.value !== undefined && LogInBool == true) {
+        error.innerHTML += '<p>Puts something in the search bar.\n</p>';
         errorBool = true;
     }
 
