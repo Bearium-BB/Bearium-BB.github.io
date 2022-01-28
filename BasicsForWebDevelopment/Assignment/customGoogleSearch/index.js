@@ -35,8 +35,8 @@ var drop = true;
 
 var loginopen = true;
 
-var passwordAs = "Barium123"
-var emailAs = "Barium@gmail.com"
+var passwordAs = 'Barium123';
+var emailAs = 'Barium@gmail.com';
 const emailPattern = /^(?=^.{8,}$)[-_A-Za-z0-9]+([_.-][a-zA-Z0-9]+)*@[A-Za-z0-9]+([.-][a-zA-Z0-9]+)*\.[A-Za-z]{2,}$/
 
 submitLogin.addEventListener('click', function() {

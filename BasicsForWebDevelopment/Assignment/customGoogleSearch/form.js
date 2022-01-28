@@ -67,8 +67,8 @@ function lookingErrors() {
     }
     if (count === 4) {
         error.innerText += 'All felds are required.';
-        error.style.display = 'block';
         animation('errorAnimation');
+        error.style.display = 'block';
 
     } else if (!valid) {
         error.innerText += message;
@@ -76,6 +76,8 @@ function lookingErrors() {
         error.style.display = 'block';
     }
     if (valid) {
-        error.style.display = 'none';
+        error.innerText += 'your signup was successful';
+        animation('workAnimation');
+        error.style.display = 'block';
     }
 }
