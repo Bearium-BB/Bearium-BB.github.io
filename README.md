@@ -16,3 +16,4 @@
 - [Guessing Number](https://Bearium-BB.github.io/BasicsForWebDevelopment/Assignment/guessing%20number/index.html)
 - [Calculator](https://Bearium-BB.github.io/BasicsForWebDevelopment/Assignment/Calculator/index.html)
 - [customGoogleSearch](https://Bearium-BB.github.io/BasicsForWebDevelopment/Assignment/customGoogleSearch/index.html)
+- [Path of the Web Developer](https://bearium-bb.github.io/BasicsForWebDevelopment/Assignment/game%20for%20object%20programming/index.html)
