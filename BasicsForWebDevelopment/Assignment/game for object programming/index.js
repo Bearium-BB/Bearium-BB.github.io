@@ -9,9 +9,69 @@ const startingGame = document.getElementById('start');
 const startingId = document.getElementById('starting');
 const end = document.getElementById('end');
 var yourScore = 0;
-const goodEnd = ``
-const badAndGood = ``
-const justBad = ``
+const goodEnd = `
+
+
+
+
+
+
+Good Ending
+
+
+Your score is ${yourScore}
+
+
+
+Mr. Brooks’ presentation went off without a hitch and applicants were plentiful. Word of mouth praised the quality of the school’s website, becoming a shining example of professional sites for many years to come. Many of the students at the school were hired by PTeCo later on and almost all of their clients could attest to the quality of their work. Alan managed many of them and he maintained a strong friendship with all of the others involved, working together for multiple other projects in the many years after. Sam got promoted to the position of project manager and led many teams to create numerous other phenomenal projects. As for Seth, he stayed with PTeCo for several years, working on more websites as a full-stack developer. The best part? The new hires looked to him like he had to Sam all those years ago. In the end, the path of the web developer was one that Seth would tread on the red carpet of the Internet’s theatre.`
+
+
+
+
+
+const badAndGood = `
+
+
+
+
+
+
+Mediocre Ending
+
+
+Your score is ${yourScore}
+
+
+
+
+
+
+Mr. Brooks managed to get plenty of new applicants for his school, but the school’s website became a source of much discussion for the web development classes when they began. Was it intentionally designed with some obvious mistakes as a way of showing what not to do? Was it an invitation for a redesign? Or were these mistakes really just that: mistakes? These debates carry on to this day. Alan and Sam continued working with PTeCo for many more years before retiring, but Seth left the company a year after the project. He then became a teacher at the Brooks Technology Collegiate as a web development instructor and helped ensure that nobody else repeated his mistakes. Why? Because even after the encouragement from Sam and Alan, it wasn’t enough to shake him out of his melancholy for long. None of the websites he made afterwards satisfied him, with even the slightest mistakes throwing him off until he couldn’t take it anymore, no matter how much support or encouragement he was given. In the end, the path of the web developer was one that Seth would cease to tread.`
+
+
+const justBad = `
+
+
+
+
+
+
+
+Bad Ending
+
+
+Your score is ${yourScore}
+
+
+
+
+
+
+
+Mr. Brooks’ presentation went well, but the website for the Brooks Technology Collegiate became famous for its laughable design, joining the likes of the Yale School of Art site on the list of websites to redesign for school projects. Alan was demoted, the embarrassing launch of the site becoming a permanent black mark on his record, but he never held it against. Sam quit his job at PTeCo, becoming a web development teacher at the college and helping his students learn from Seth’s mistakes. And Seth? He continued working at PTeCo, but he never touched another CSS file again, instead becoming the go-to programmer for the backend development of any project he took on. In the end, the path of the web developer was one that Seth would tread behind the stage of the Internet.`
+
+
+
 const day1Story = `
 
 
@@ -290,34 +350,39 @@ function Day1() {
             if (i.value == 1) {
                 playerChoices.push(i.value);
                 colourPalette.push(gridcss[0].style.backgroundColor);
+                buttonAudio.play();
+                yourScore += Math.floor(Math.random() * 11);
                 changingColour();
                 nextScene();
-                buttonAudio.play();
                 return;
             }
             if (i.value == 2) {
                 playerChoices.push(i.value);
                 colourPalette.push(gridcss[1].style.backgroundColor);
+                buttonAudio.play();
+                yourScore += Math.floor(Math.random() * 11);
                 changingColour();
                 nextScene();
-                buttonAudio.play();
                 return;
             }
             if (i.value == 3) {
                 playerChoices.push(i.value);
                 colourPalette.push(gridcss[2].style.backgroundColor);
+                buttonAudio.play();
+                yourScore += Math.floor(Math.random() * 11);
                 changingColour();
                 nextScene();
-                buttonAudio.play();
                 return;
 
             }
             if (i.value == 4) {
                 playerChoices.push(i.value);
                 colourPalette.push(gridcss[3].style.backgroundColor);
+                buttonAudio.play();
+                yourScore += Math.floor(Math.random() * 11);
                 changingColour();
                 nextScene();
-                buttonAudio.play();
+
                 return;
 
             }
@@ -347,25 +412,32 @@ function Day2() {
         i.addEventListener('click', function(event) {
             if (i.value == 1) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 30;
+                nextScene();
+
                 return;
             }
             if (i.value == 2) {
                 playerChoices.push(i.value);
+                buttonAudio.play();
+                yourScore += 0;
                 nextScene();
                 return;
             }
             if (i.value == 3) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 5;
+                nextScene();
                 return;
+
             }
             if (i.value == 4) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 20;
+                nextScene();
                 return;
             }
         })
@@ -381,26 +453,32 @@ function Day3() {
         i.addEventListener('click', function(event) {
             if (i.value == 1) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 0;
+                nextScene();
                 return;
+
             }
             if (i.value == 2) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 30;
+                nextScene();
                 return;
             }
             if (i.value == 3) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 0;
+                nextScene();
                 return;
             }
             if (i.value == 4) {
                 playerChoices.push(i.value);
-                nextScene();
                 buttonAudio.play();
+                yourScore += 30;
+                nextScene();
+
                 return;
             }
         })
@@ -551,6 +629,68 @@ function nextScene() {
         day2.style.display = 'none';
         day3.style.display = 'none';
         end.style.display = 'block';
+        console.log(yourScore);
+        const goodEnd = `
+
+
+
+
+
+
+Good Ending
+
+
+Your score is ${yourScore}
+
+
+
+Mr. Brooks’ presentation went off without a hitch and applicants were plentiful. Word of mouth praised the quality of the school’s website, becoming a shining example of professional sites for many years to come. Many of the students at the school were hired by PTeCo later on and almost all of their clients could attest to the quality of their work. Alan managed many of them and he maintained a strong friendship with all of the others involved, working together for multiple other projects in the many years after. Sam got promoted to the position of project manager and led many teams to create numerous other phenomenal projects. As for Seth, he stayed with PTeCo for several years, working on more websites as a full-stack developer. The best part? The new hires looked to him like he had to Sam all those years ago. In the end, the path of the web developer was one that Seth would tread on the red carpet of the Internet’s theatre.`
+
+
+
+
+
+        const badAndGood = `
+
+
+
+
+
+
+Mediocre Ending
+
+
+Your score is ${yourScore}
+
+
+
+
+
+
+Mr. Brooks managed to get plenty of new applicants for his school, but the school’s website became a source of much discussion for the web development classes when they began. Was it intentionally designed with some obvious mistakes as a way of showing what not to do? Was it an invitation for a redesign? Or were these mistakes really just that: mistakes? These debates carry on to this day. Alan and Sam continued working with PTeCo for many more years before retiring, but Seth left the company a year after the project. He then became a teacher at the Brooks Technology Collegiate as a web development instructor and helped ensure that nobody else repeated his mistakes. Why? Because even after the encouragement from Sam and Alan, it wasn’t enough to shake him out of his melancholy for long. None of the websites he made afterwards satisfied him, with even the slightest mistakes throwing him off until he couldn’t take it anymore, no matter how much support or encouragement he was given. In the end, the path of the web developer was one that Seth would cease to tread.`
+
+
+        const justBad = `
+
+
+
+
+
+
+
+Bad Ending
+
+
+Your score is ${yourScore}
+
+
+
+
+
+
+
+Mr. Brooks’ presentation went well, but the website for the Brooks Technology Collegiate became famous for its laughable design, joining the likes of the Yale School of Art site on the list of websites to redesign for school projects. Alan was demoted, the embarrassing launch of the site becoming a permanent black mark on his record, but he never held it against. Sam quit his job at PTeCo, becoming a web development teacher at the college and helping his students learn from Seth’s mistakes. And Seth? He continued working at PTeCo, but he never touched another CSS file again, instead becoming the go-to programmer for the backend development of any project he took on. In the end, the path of the web developer was one that Seth would tread behind the stage of the Internet.`
+
         if (yourScore > 90) {
             document.getElementById('storytext').innerText = goodEnd;
             document.getElementById('storytext').scrollTop = 0;
