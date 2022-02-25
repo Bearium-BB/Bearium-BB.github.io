@@ -1,14 +1,14 @@
-const playerChoices = [];
-const colourPalette = [];
-var fontFamilyD3 = ['Lobster', 'Roboto', 'Satisfy', 'Oxygen'];
+let playerChoices = [];
+let colourPalette = [];
+let fontFamilyD3 = ['Lobster', 'Roboto', 'Satisfy', 'Oxygen'];
 const day1 = document.getElementById('day1');
 const day2 = document.getElementById('day2');
 const day3 = document.getElementById('day3');
-
+const reset = document.querySelector('#reset-button');
 const startingGame = document.getElementById('start');
 const startingId = document.getElementById('starting');
 const end = document.getElementById('end');
-var yourScore = 0;
+let yourScore = 0;
 
 const day1Story = `
 
@@ -50,7 +50,7 @@ Alan: All right, let’s start. Mr. Brooks, would you like to start us off?
 
 The man across the table from me stands up. That’s Mr. Brooks, our client. 
 
-Mr. Brooks: Here’s the mockup I made of what I want the site to look like
+Mr. Brooks: Here’s the mockup I made of what I want the site to look like.
 
 He shows us what he’s done so far and all I can do is stare at it in horror. Who designed this, exactly? This looks like it was designed for kids, not high schoolers or parents who are interested in the program. It also seems like my sentiment is shared, as the guy next to me is giving Mr. Brooks a dirty look. That’s Sam Hendrix, who’s a senior developer that also got assigned to this project. We’ve met before during my orientation here, so I can say that I sort of look up to him.
 
@@ -220,8 +220,8 @@ Alan: Now, let’s get ready for the presentation.
 
 
 `;
-var buttonAudio = new Audio('Audio/ButtonAudio.wav');
-var backgroundAudio = new Audio('Audio/BackgroundAudio.mp3');
+let buttonAudio = new Audio('Audio/ButtonAudio.wav');
+let backgroundAudio = new Audio('Audio/BackgroundAudio.mp3');
 
 startingGame.addEventListener('click', function() {
     buttonAudio.play();
@@ -286,7 +286,7 @@ function Day1() {
 
 
     function generateColour() {
-        var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        let randomColor = Math.floor(Math.random() * 16777215).toString(16);
         return '#' + randomColor;
     }
 
@@ -388,7 +388,7 @@ function constructorEndScene() {
 
 
 
-    var playersInputNavbar;
+    let playersInputNavbar;
     switch (playerChoices[4]) {
         case '1':
             navbarColourSwitcher(nav1End);
@@ -578,7 +578,7 @@ Your score is ${yourScore}
 
 Mr. Brooks’ presentation went well, but the website for the Brooks Technology Collegiate became famous for its laughable design, joining the likes of the Yale School of Art site on the list of websites to redesign for school projects. Alan was demoted, the embarrassing launch of the site becoming a permanent black mark on his record, but he never held it against. Sam quit his job at PTeCo, becoming a web development teacher at the college and helping his students learn from Seth’s mistakes. And Seth? He continued working at PTeCo, but he never touched another CSS file again, instead becoming the go-to programmer for the backend development of any project he took on. In the end, the path of the web developer was one that Seth would tread behind the stage of the Internet.`
 
-        if (yourScore > 80) {
+        if (yourScore >= 80) {
             document.getElementById('storytext').innerText = goodEnd;
             document.getElementById('storytext').scrollTop = 0;
         } else if (yourScore > 40 && yourScore < 80) {
@@ -590,6 +590,9 @@ Mr. Brooks’ presentation went well, but the website for the Brooks Technology 
         }
         constructorEndScene();
     }
+    setTimeout(function () {
+        reset.classList.remove('hidden');
+    }, 15000);
 }
 
 Day1();
@@ -599,6 +602,19 @@ Day3();
 
 
 window.setInterval(function() {
-    var elem = document.getElementById('storytext');
+    let elem = document.getElementById('storytext');
     elem.scrollTop += 1
 }, 50);
+
+reset.addEventListener('click', function() {
+    playerChoices = [];
+    colourPalette = [];
+    yourScore = 0;
+    nav1End.style.display = 'none';
+    nav2End.style.display = 'none';
+    nav3End.style.display = 'none';
+    nav4End.style.display = 'none';
+    reset.classList.add('hidden');
+    nextScene();
+    
+});
