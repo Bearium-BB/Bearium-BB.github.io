@@ -9,6 +9,19 @@ const startingGame = document.getElementById('start');
 const startingId = document.getElementById('starting');
 const end = document.getElementById('end');
 let yourScore = 0;
+let bool = true;
+let userName = 'bob';
+
+const disclaimer = `
+            Disclaimer
+
+
+This was made by 2 students who have no idea what a day at the 
+office is actually like, so inaccuracies are to be expected. 
+Additionally, this is a work of fiction. Similarities between real 
+people, living or dead, are purely coincidental.
+
+`
 
 const day1Story = `
 
@@ -222,13 +235,14 @@ Alan: Now, let’s get ready for the presentation.
 `;
 let buttonAudio = new Audio('Audio/ButtonAudio.wav');
 let backgroundAudio = new Audio('Audio/BackgroundAudio.mp3');
-
+nextScene();
 startingGame.addEventListener('click', function() {
     buttonAudio.play();
     backgroundAudio.loop = true;
     backgroundAudio.play();
     backgroundAudio.volume = 0.2;
     nextScene();
+    bool = false;
 });
 
 function Day1() {
@@ -483,7 +497,17 @@ function constructorEndScene() {
 
 
 function nextScene() {
-    if (playerChoices.length <= 3) {
+    if (bool == true) {
+        document.getElementById('storytext').innerText = disclaimer;
+        startingId.style.display = 'block';
+        day1.style.display = 'none';
+        day2.style.display = 'none';
+        day3.style.display = 'none';
+        end.style.display = 'none';
+        bool = false
+        document.getElementById('storytext').scrollTop = 0;
+
+    } else if (playerChoices.length <= 3) {
         document.getElementById('storytext').innerText = day1Story;
         startingId.style.display = 'none';
         day1.style.display = 'block';
@@ -517,6 +541,7 @@ function nextScene() {
         day3.style.display = 'none';
         end.style.display = 'block';
         console.log(yourScore);
+        localStorage.setItem(`Score-${localStorage.length+1}`, yourScore)
         const goodEnd = `
 
 
@@ -590,9 +615,10 @@ Mr. Brooks’ presentation went well, but the website for the Brooks Technology 
         }
         constructorEndScene();
     }
-    setTimeout(function () {
+    setTimeout(function() {
         reset.classList.remove('hidden');
     }, 15000);
+    reset.classList.add('hidden');
 }
 
 Day1();
@@ -615,6 +641,12 @@ reset.addEventListener('click', function() {
     nav3End.style.display = 'none';
     nav4End.style.display = 'none';
     reset.classList.add('hidden');
+    bool = true;
     nextScene();
-    
+
 });
+let keyss = Object.keys(localStorage)
+let valuess = Object.values(localStorage)
+for (let i = 0; i < localStorage.length; i++) {
+    console.log(`${userName} ${keyss[i]} ${valuess[i]}`)
+}
