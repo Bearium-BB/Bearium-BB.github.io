@@ -10,7 +10,7 @@ const startingId = document.getElementById('starting');
 const end = document.getElementById('end');
 let yourScore = 0;
 let bool = true;
-let userName = 'bob';
+upLeaderboard()
 const disclaimer = `
             Disclaimer
 
@@ -548,15 +548,8 @@ function nextScene() {
         day3.style.display = 'none';
         end.style.display = 'block';
 
-        const valuess = Object.values(localStorage);
-        const keyss = Object.values(localStorage);
-        for (let i = 0; i < valuess.length; i++) {
-            if (valuess[i] < yourScore) {
 
-                localStorage.setItem(keyss[i], yourScore);
-            }
-        }
-        /*
+        const valuess = Object.values(localStorage);
         valuess.push(yourScore);
         valuess.sort((a, b) => { return b - a });
         if (valuess.length > 5) {
@@ -564,9 +557,8 @@ function nextScene() {
         }
         for (let i = 0; i < valuess.length; i++) {
             localStorage.setItem(`score${ i + 1 }`, valuess[i]);
-            console.log(`Score ${i+1}: ${valuess[i]}`);
         }
-        */
+
         const goodEnd = `
 
 
@@ -670,3 +662,20 @@ reset.addEventListener('click', function() {
     nextScene();
 
 });
+
+
+function upLeaderboard() {
+    arrraylS = Object.values(localStorage);
+    console.log(arrraylS.length)
+    arrraylS.sort((a, b) => { return b - a });
+    document.getElementById('leaderboardText').innerText = `        1: ${arrraylS[0]}
+        2: ${arrraylS[1]}
+        3: ${arrraylS[2]}
+        4: ${arrraylS[3]}
+        5: ${arrraylS[4]}
+        `
+
+}
+setInterval(function() {
+    upLeaderboard()
+}, 1000);

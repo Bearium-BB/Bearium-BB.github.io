@@ -735,3 +735,26 @@ body {
 
 
 /*End*/
+
+#leaderboard {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50vh;
+    width: 300px;
+    background-color: #393e4680;
+    left: 170px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#leaderboardText {
+    color: #EEEEEE;
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+#leaderboard #bob {
+    color: #EEEEEE;
+    font-size: 32px;
+    text-align: center;
+}
