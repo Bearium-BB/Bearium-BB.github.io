@@ -11,7 +11,6 @@ const end = document.getElementById('end');
 let yourScore = 0;
 let bool = true;
 let userName = 'bob';
-
 const disclaimer = `
             Disclaimer
 
@@ -233,6 +232,14 @@ Alan: Now, let’s get ready for the presentation.
 
 
 `;
+
+function getDate() {
+    const options = {
+        month: 'short',
+        day: 'numeric',
+    }
+    return new Date().toLocaleDateString('en-ca', "options")
+}
 let buttonAudio = new Audio('Audio/ButtonAudio.wav');
 let backgroundAudio = new Audio('Audio/BackgroundAudio.mp3');
 nextScene();
@@ -540,8 +547,26 @@ function nextScene() {
         day2.style.display = 'none';
         day3.style.display = 'none';
         end.style.display = 'block';
-        console.log(yourScore);
-        localStorage.setItem(`Score-${localStorage.length+1}`, yourScore)
+
+        const valuess = Object.values(localStorage);
+        const keyss = Object.values(localStorage);
+        for (let i = 0; i < valuess.length; i++) {
+            if (valuess[i] < yourScore) {
+
+                localStorage.setItem(keyss[i], yourScore);
+            }
+        }
+        /*
+        valuess.push(yourScore);
+        valuess.sort((a, b) => { return b - a });
+        if (valuess.length > 5) {
+            valuess.pop();
+        }
+        for (let i = 0; i < valuess.length; i++) {
+            localStorage.setItem(`score${ i + 1 }`, valuess[i]);
+            console.log(`Score ${i+1}: ${valuess[i]}`);
+        }
+        */
         const goodEnd = `
 
 
@@ -645,8 +670,3 @@ reset.addEventListener('click', function() {
     nextScene();
 
 });
-let keyss = Object.keys(localStorage)
-let valuess = Object.values(localStorage)
-for (let i = 0; i < localStorage.length; i++) {
-    console.log(`${userName} ${keyss[i]} ${valuess[i]}`)
-}
