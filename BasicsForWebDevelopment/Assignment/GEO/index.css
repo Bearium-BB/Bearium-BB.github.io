@@ -1,0 +1,134 @@
+    @charset "utf-8";
+    #map {
+        width: 100%;
+        height: 100%;
+        background-color: aqua;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        box-shadow: none;
+        box-sizing: border-box;
+        vertical-align: baseline;
+        -webkit-transition-duration: 0;
+        transition-duration: 0;
+    }
+    
+    p,
+    a,
+    li,
+    input,
+    textarea,
+    div,
+    span,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: Raleway, Helvetica, sans-serif;
+        -webkit-font-smoothing: anrialised;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        letter-spacing: 0;
+    }
+    
+    .container {
+        position: relative;
+        width: 90%;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+    
+    header {
+        background-color: #69BC62;
+        display: flex;
+        align-items: center;
+        min-width: 100%;
+        overflow: hidden;
+        height: 56px;
+    }
+    
+    .flexbox {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .title {
+        display: flex;
+        align-items: center;
+    }
+    
+    .title h1 {
+        font-size: 18px;
+        font-weight: 600;
+        color: white;
+        line-height: 56px;
+        text-transform: uppercase;
+    }
+    
+    nav {
+        text-align: right;
+        height: 56px;
+    }
+    
+    nav ul {
+        list-style: none;
+        font-size: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        line-height: 56px;
+        cursor: default;
+    }
+    
+    nav ul li a {
+        font-size: 17px;
+        color: #ffff;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: .2px;
+        text-transform: none;
+        cursor: pointer;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    nav ul li:last-child a {
+        padding: 12px;
+        background-color: rgba(197, 197, 197, 0.3);
+        border-radius: 8px;
+    }
+    
+    nav ul li+li {
+        margin-left: 25px;
+    }
+    
+    #outer {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #map {
+        width: 84%;
+        height: 80%;
+        border: 1px solid black;
+    }
+    
+    #dot {
+        width: 25px;
+        height: 25px;
+        border-radius: 64px;
+        background-color: #69BC62;
+        position: fixed;
+    }
