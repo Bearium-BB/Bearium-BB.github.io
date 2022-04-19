@@ -20,11 +20,12 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #69BC62;
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 1000;
+    transform: translate(-50%, -50%);
 }
 
 #dot:after {

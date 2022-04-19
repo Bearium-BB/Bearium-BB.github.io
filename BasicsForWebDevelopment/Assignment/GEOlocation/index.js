@@ -13,8 +13,7 @@ if (navigator.geolocation) {
     console.log('Geolocation is not supported by your browser');
 }
 
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiYmVhcml1bSIsImEiOiJjbDF3ZzJ4MW0wZGRvM2tvMXdpZTR1NzVmIn0.TksuYf29aF9_CCGOwbBmKg';
 const map = new mapboxgl.Map({
@@ -24,6 +23,9 @@ const map = new mapboxgl.Map({
     interactive: false,
     zoom: 17 // starting zoom
 });
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 // We listen to the resize event
 window.addEventListener('resize', () => {
