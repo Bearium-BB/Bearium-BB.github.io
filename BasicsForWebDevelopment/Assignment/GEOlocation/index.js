@@ -1,13 +1,6 @@
 function showLocation(position) {
     const { longitude, latitude } = position.coords;
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYmVhcml1bSIsImEiOiJjbDF3ZzJ4MW0wZGRvM2tvMXdpZTR1NzVmIn0.TksuYf29aF9_CCGOwbBmKg';
-    const map = new mapboxgl.Map({
-        container: 'map', // container ID
-        style: 'mapbox://styles/mapbox/streets-v11', // style URL
-        center: [longitude, latitude], // starting position [lng, lat]
-        interactive: false,
-        zoom: 17 // starting zoom
-    });
+    map.setCenter([longitude, latitude]);
 }
 
 function errorHandler() {
@@ -23,7 +16,14 @@ if (navigator.geolocation) {
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-
+mapboxgl.accessToken = 'pk.eyJ1IjoiYmVhcml1bSIsImEiOiJjbDF3ZzJ4MW0wZGRvM2tvMXdpZTR1NzVmIn0.TksuYf29aF9_CCGOwbBmKg';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [0, 0], // starting position [lng, lat]
+    interactive: false,
+    zoom: 17 // starting zoom
+});
 
 // We listen to the resize event
 window.addEventListener('resize', () => {
