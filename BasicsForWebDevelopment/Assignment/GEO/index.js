@@ -1,3 +1,5 @@
+"use strict"
+
 function showLocation(position) {
     const { longitude, latitude } = position.coords;
     map.setCenter([longitude, latitude]);
@@ -18,9 +20,6 @@ const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
     center: [0, 0], // starting position [lng, lat]
+    dragPan: false,
     zoom: 17 // starting zoom
 });
-
-setInterval(() => {
-    navigator.geolocation.getCurrentPosition(showLocation, errorHandler);
-}, 1);

@@ -30,7 +30,7 @@
         h4,
         h5,
         h6 {
-            font-family: Raleway, Helvetica, sans-serif;
+            font-family: Helvetica, sans-serif;
             -webkit-font-smoothing: anrialised;
             -moz-osx-font-smoothing: grayscale;
             text-rendering: optimizeLegibility;
@@ -121,7 +121,7 @@
         }
         
         #outer p {
-            font-size: 48px;
+            font-size: 35px;
             margin-bottom: 25px;
             font-weight: 700;
         }
