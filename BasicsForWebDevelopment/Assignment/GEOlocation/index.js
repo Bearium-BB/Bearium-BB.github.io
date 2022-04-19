@@ -15,7 +15,7 @@ function errorHandler() {
 }
 
 if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showLocation, errorHandler);
+    navigator.geolocation.watchPosition(showLocation, errorHandler);
 } else {
     console.log('Geolocation is not supported by your browser');
 }
