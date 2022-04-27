@@ -73,6 +73,7 @@ input[type=button] {
     font-size: 24px;
     background-color: #1d90f4;
     box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 25px;
 }
 
 input[type=button]:hover {
