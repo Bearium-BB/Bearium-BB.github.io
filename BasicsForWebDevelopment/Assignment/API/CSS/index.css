@@ -1,0 +1,137 @@
+@charset "utf-8";
+@import "base.css";
+#background {
+    background-image: linear-gradient(45deg, rgba(40, 42, 55, 1) 60%, rgba(253, 253, 253, 0.5) 100%), url(../img/landband.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+
+#login {
+    width: 500px;
+    height: 500px;
+    margin-left: 50px;
+    padding: 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #EEEEEE;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input[type=text] {
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #323645;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.5);
+}
+
+input[type=text]:hover {
+    border: 2px solid #397ec0;
+    box-shadow: -1px 0px 0px 3px rgba(37, 53, 77, 0.5);
+    transition-duration: 0.2s;
+}
+
+input[type=password] {
+    width: 300px;
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    background: #323645;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.5);
+}
+
+input[type=password]:hover {
+    border: 2px solid #397ec0;
+    box-shadow: -1px 0px 0px 3px rgba(37, 53, 77, 0.5);
+    transition-duration: 0.2s;
+}
+
+input[type=button] {
+    width: 150px;
+    height: 55px;
+    border-radius: 40px;
+    padding: 10px;
+    background: #323645;
+    color: white;
+    display: block;
+    margin-bottom: 15px;
+    font-size: 24px;
+    background-color: #1d90f4;
+    box-shadow: 10px 10px 53px 0px rgba(0, 0, 0, 0.5);
+}
+
+input[type=button]:hover {
+    background-color: #187acf;
+    cursor: pointer;
+}
+
+h2 {
+    color: #EEEEEE;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+input[type=checkbox] {
+    width: 19px;
+    height: 19px;
+    cursor: pointer;
+}
+
+#login p {
+    color: #EEEEEE;
+    height: 19px;
+    margin-left: 5px;
+}
+
+#checkboxDiv {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#nav {
+    height: 56px;
+    width: 100vh;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#nav a {
+    display: inline;
+    text-decoration: none;
+    color: #707684;
+    margin: 0 50px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+#logo {
+    width: 45px;
+    height: 45px;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-size: contain;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    display: inline-block;
+    margin-left: 50px;
+}
