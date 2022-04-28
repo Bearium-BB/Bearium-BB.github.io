@@ -2,6 +2,7 @@ let rememberMe = document.getElementById('rememberMe');
 let login = document.getElementById('loginBut');
 let email = document.getElementById('email');
 let password = document.getElementById('password');
+let incorrectPE = document.getElementById('incorrectPE')
 let rememberMeBool = false;
 console.log(localStorage)
 
@@ -32,7 +33,8 @@ login.addEventListener('click', function() {
         localStorage.setItem('user', stringfiedUser);
         window.location.href = './profile.html'
     } else {
-
+        console.log('test')
+        incorrectPE.style.opacity = 1;
     }
 });
 

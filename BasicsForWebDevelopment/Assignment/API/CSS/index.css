@@ -136,3 +136,9 @@ input[type=checkbox] {
     display: inline-block;
     margin-left: 50px;
 }
+
+#login #incorrectPE {
+    color: red;
+    opacity: 0;
+    margin-bottom: 10px;
+}
