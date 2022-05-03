@@ -1,4 +1,4 @@
-# timelord200410.github.io
+# Bearium-BB
 ### Assignments
 - [Assignment_3](https://Bearium-BB.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Assignment_3/index.html)
 - [Assignment_4](https://Bearium-BB.github.io/BasicsForWebDevelopment/Assignment/Brett_Bowley_Assignment_4/index.html)
